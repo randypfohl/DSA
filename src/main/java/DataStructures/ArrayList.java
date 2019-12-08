@@ -144,8 +144,9 @@ public class ArrayList<E>{
     private void grow(int minCapacity){
         int oldCapacity = elementArray.length;
         int newCapacity = oldCapacity + (oldCapacity >> 1);
-        if(newCapacity - oldCapacity < 0) newCapacity =  minCapacity;
+        if(newCapacity - minCapacity < 0) newCapacity =  minCapacity;
         if(newCapacity > MAX_ARRAY_SIZE) newCapacity = MAX_ARRAY_SIZE;
         elementArray = Arrays.copyOf(elementArray, newCapacity);
     }
+
 }
