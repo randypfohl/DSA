@@ -7,8 +7,6 @@ I'll be implementing the data structures listed below, and then use those data s
 **Data Structures**
 * ArrayList
 * LinkedList
-    * Single Linked List
-    * Double Linked List
 * Stack
 * Tree
     * Binary Tree
